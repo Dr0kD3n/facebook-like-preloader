@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+</head>
+<body>
+  <div id="MainView">
+    <header id="nav_bar">
+      <i class="bell">
+        <img src="https://dl.dropboxusercontent.com/s/db4bnc6qw5pwse0/bell.svg" alt="" />
+      </i>
+      <div class="notification_list">
+        <div class="top_ptr"></div>
+        <div class="notification_scroll">
+          <div class="loading-header"></div>
+          <div class="loading-full">
+            <div class="loading-wave">
+              <div class="rect1"></div>
+              <div class="rect2"></div>
+              <div class="rect3"></div>
+              <div class="rect4"></div>
+              <div class="rect5"></div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </header>
+    <div class="side-panel ng-scope" data-ui-view="side-panel">
+      <article class="post">
+        <div class="preloader set">
+          <div class="loader-circle"></div>
+          <div class="loader-bar"></div>
+          <div class="loader-bar mini-bar"></div>
+          <div class="loader-bar"></div>
+          <div class="loader-bar mini-bar"></div>
+          <div class="loader-bar"></div>
+          <div class="loader-bar mini-bar"></div>
+          <div class="loader-bar"></div>
+          <div class="loader-bar mini-bar"></div>
+          <div class="loader-bar"></div>
+          <div class="loader-bar mini-bar"></div>
+          <div class="loader-bar"></div>
+          <div class="loader-bar mini-bar"></div>
+        </div>
+      </article>
+
+    </div>
+    <!-- Side Panel Ends-->
+
+    <div class="body-main">
+
+
+      <!-- Action Center Begins-->
+      <div id="action_center" class="fade-init ng-scope" data-ui-view="action-center">
+        <article class="post">
+          <div class="preloader set">
+            <div class="loader-circle"></div>
+            <div class="loader-bar mini-bar"></div>
+            <div class="loader-bar"></div>
+            <div class="loader-bar"></div>
+            <div class="loader-btn"></div>
+          </div>
+        </article>
+      </div>
+      <div data-ui-view="shortcuts" class="ng-scope">
+        <div id="shortcuts" class="shortcuts_panel fade-init post" data-helpid="shortcuts#4">
+          <article class="post">
+            <div class="preloader">
+              <div class="set">
+                <div class="loader-circle"></div>
+                <div class="loader-bar"></div>
+              </div>
+              <div class="set">
+                <div class="loader-circle"></div>
+                <div class="loader-bar"></div>
+              </div>
+              <div class="set">
+                <div class="loader-circle"></div>
+                <div class="loader-bar"></div>
+              </div>
+              <div class="set">
+                <div class="loader-circle"></div>
+                <div class="loader-bar"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    $('.bell').on('click',function(){
+      $('.notification_list').fadeToggle();
+    });
+  </script>
+</body>
+</html>
